@@ -1,7 +1,7 @@
 :orphan:
 
 ======================================
-Rackspace Fanatical Support for GCP Product Guide
+Docs GCP Product Guide
 ======================================
 
 This repository contains the source files that generate the Solution Docs:

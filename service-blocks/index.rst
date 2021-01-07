@@ -16,7 +16,7 @@ the service options to match your needs. These offers are described below.
 
 
 Platform Essentials
-^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^
 
 Platform Essentials is a prerequisite for all other GCP service blocks.
 Platform Essentials includes:
