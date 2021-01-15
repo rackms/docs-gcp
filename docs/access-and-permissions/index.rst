@@ -45,17 +45,45 @@ applied at service levels, for example. Rackspace’s policy to avoid granting
 access unless necessary, and then grant it at the most granular level
 possible is necessary to ensure unintentional access is not granted.
 
-In order to ensure that your aviator projects meet this permissions model,
+In order to ensure that your Aviator or Service Blocks projects meet this permissions model,
 Rackspace may periodically audit the permissions being passed to the project
-and require adjustments to to utilize the least permissive model.
+and require adjustments to utilize the least permissive model.
+
+Service Accounts
+^^^^^^^^^^^^^^^^
 
 Rackspace will add a service account with the Project Owner role to each of
-your GCP projects that we
-manage: ``automation@rackspace-mgcp.iam.gserviceaccount.com``. Additionally, we
-will grant ``resource-observer@rackspace-mgcp.iam.gserviceaccount.com`` the
-Viewer role on all Aviator projects. Do not remove these accounts or alter
-their permissions in any way without first consulting with your
-:ref:`support team <support>`. We will also temporarily add accounts from the
+your GCP projects that we manage: ``automation@rackspace-mgcp.iam.gserviceaccount.com``.
+
+Additionally, we will grant these service accounts access with the following roles to enable support tooling for all Aviator and Service Blocks projects:
+
+- ``resource-observer@rackspace-mgcp.iam.gserviceaccount.com``
+
+  The Resource Observer collects project metadata for support inventory
+
+  + Viewer
+
+- ``smart-tickets@rackspace-mgcp.iam.gserviceaccount.com``
+
+  Smart Tickets works with Watchman to provide automated diagnostics and additional context for monitoring alerts that are turned to tickets for Rackers to address
+
+  + Viewer
+  + IAP-secured Tunnel User
+  + Compute Instance Admin
+  + Compute Security Admin
+
+- ``mgcp-operations@rackspace-mgcp.iam.gserviceaccount.com``
+
+  MGCP Operations facilitates integration of Operations monitoring (formerly Stackdriver) with Watchman
+
+  + Viewer
+  + Monitoring Admin
+
+
+Do not remove these accounts or alter their permissions in any way without first consulting with your
+:ref:`support team <support>`.
+
+We will also temporarily add accounts from the
 gcp.rackspace.com domain as Rackers and automation need access to your
 projects, so do not remove those accounts or alter their permissions.
 
