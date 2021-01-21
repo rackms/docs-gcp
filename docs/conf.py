@@ -11,11 +11,14 @@ Note that not all possible configuration values are present.
 All configuration values have a default; values that are commented out
 serve to show the default.
 """
-#import sys
 import sys
 from datetime import datetime
 from os import path
 
+try:
+    from sphinxcontrib import spelling
+except:
+    spelling = None
 # If your extensions are in another directory, add it here. If the directory
 # is relative to the documentation root, use os.path.abspath to make it
 # absolute, like shown here.
@@ -34,8 +37,14 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.coverage',
     'sphinx.ext.intersphinx',
-    'sphinx.ext.viewcode'
+    'sphinx.ext.viewcode',
+    'sphinx.ext.githubpages',
+    'sphinx.ext.ifconfig',
+    'sphinx.ext.todo'
 ]
+
+if spelling is not None:
+    extensions.append('sphinxcontrib.spelling')
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -68,7 +77,7 @@ language = 'en'
 # non-false value, then it is used:
 #today = ''
 # Else, today_fmt is used as the format for a strftime call.
-#today_fmt = '%B %d, %Y'
+today_fmt = '%B %d, %Y'
 
 # List of documents that shouldn't be included in the build.
 #unused_docs = []
@@ -80,7 +89,7 @@ rst_epilog = """
 .. |product name| replace:: Fanatical Support for GCP
 """
 
-exclude_patterns = ['build']
+exclude_patterns = ['_build', 'samples', 'README.rst']
 
 # List of directories, relative to source directory, that shouldn't be searched
 # for source files.
@@ -146,7 +155,6 @@ html_theme_options = {
     "collapse_navigation" : False
 }
 
-html_title = "Fanatical Support for GCP Product Guide"
 
 # Add any paths that contain custom themes here, relative to this directory.
 # Add path to the RTD explicitly to robustify builds (otherwise might
@@ -161,7 +169,7 @@ html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 # The name for this set of Sphinx documents.  If None, it defaults to
 # "<project> v<release> documentation".
-#html_title = None
+html_title = "Fanatical Support for GCP Product Guide"
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
@@ -211,8 +219,9 @@ html_copy_source = True
 # If nonempty, this is the file name suffix for HTML files (e.g. ".xhtml").
 #html_file_suffix = ''
 
+
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'Rackspace Technology Fanatical Support for GCP Product Guide'
+#htmlhelp_basename = 'Rackspace Technology Fanatical Support for GCP Product Guide'
 
 
 html_show_copyright = True
@@ -247,6 +256,15 @@ html_show_copyright = True
 # If false, no module index is generated.
 #latex_use_modindex = True
 
+# SCVersioning.
+#scv_banner_greatest_tag = True
+scv_grm_exclude = ('.gitignore', '.nojekyll', 'README.rst')
+scv_show_banner = True
+#scv_banner_recent_tag = True
+svc_banner_main_ref = 'master'
+scv_sort = ('semver', 'time')
+scv_root_ref = 'master'
+svc_priority = 'branches'
 
 # Options for the linkcheck builder
 # ---------------------------------
