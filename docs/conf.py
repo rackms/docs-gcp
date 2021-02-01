@@ -15,6 +15,12 @@ import sys
 from datetime import datetime
 from os import path
 
+
+try:
+    import sphinx_rtd_theme
+except ImportError:
+    sphinx_rtd_theme = None
+    
 try:
     from sphinxcontrib import spelling
 except:
