@@ -12,7 +12,7 @@ Fanatical Support for GCP Product Guide
   to be used for point-in-time offline reference purposes only. The
   authoritative version of this document lives online at
   `https://manage.rackspace.com/gcp/docs <https://manage.rackspace.com/gcp/docs>`_
-  and will contain the latest updates. |vspace|
+  and will contain the latest updates.
 
 This Product Guide is designed to provide a detailed look at how Rackspace
 delivers our **Managed Services for Google Cloud Platform** offering.
