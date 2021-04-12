@@ -41,10 +41,12 @@ To sign up, visit
 
    self
    getting-started-gcp/index.rst
+   rackspace-elastic-engineering-and-optimizer/index.rst
    gcp-projects/index.rst
-   service-levels/index.rst
-   service-blocks/index.rst
    billing/index.rst
    access-and-permissions/index.rst
    security/index.rst
    support/index.rst
+   legacy-service-offers.rst
+   service-levels/index.rst
+   service-blocks/index.rst
