@@ -10,7 +10,7 @@ your needs at any stage of your cloud lifecycle. Our services provide you
 access to certified cloud specialists through a flexible POD-based model. We have
 experts who can implement industry-best cloud monitoring technologies, suggest cost
 optimization recommendations, solve your IT challenges, and offer other
-value-added services, all backed by AWS certified engineers and architects.
+value-added services — all backed by GCP-certified engineers and architects.
 
 Our offers enable you to customize your experience and choose the
 service options to match your needs.
