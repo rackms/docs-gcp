@@ -75,8 +75,8 @@ between Rackspace Technology and the customer.
 
 .. _monitoring_resolution:
 
-Advanced monitoring and resolution
------------------------------------
+Advanced Monitoring and Resolution
+----------------------------------
 
 Built for customers' critical workloads and always vigilant 24x7x365, our team
 of operations engineers monitors and responds to alerts in customer
