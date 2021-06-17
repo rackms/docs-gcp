@@ -47,6 +47,6 @@ To sign up, visit
    access-and-permissions/index.rst
    security/index.rst
    support/index.rst
-   legacy-service-offers.rst
+   legacy-service-offers/index.rst
    service-levels/index.rst
    service-blocks/index.rst
