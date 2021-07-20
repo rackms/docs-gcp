@@ -5,9 +5,7 @@ Support for GCP Product Guide:
 
 * <https://developer.rackspace.com/docs/fanatical-support-gcp/>
 
-When you commit changes to the master branch of this repository, the
-[Strider CI/CD build job](https://build.developer.rackspace.com/rackerlabs/docs-gcp/)
-builds the documentation. Successful builds are deployed to production.
+When you commit changes to the master branch of this repository, Netlify deploys to production.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/b8c923a6-ad57-45a3-8fcc-6bf8c2cfdd10/deploy-status)](https://app.netlify.com/sites/docs-gcp/deploys)
 
