@@ -52,8 +52,13 @@ and require adjustments to use the least permissive model.
 Service Accounts
 ^^^^^^^^^^^^^^^^
 
-Rackspace adds a service account with the Project Owner role to each of
-your GCP projects that we manage: ``automation@rackspace-mgcp.iam.gserviceaccount.com``.
+Rackspace adds a primary service account with these roles to each of your GCP projects that we manage:
+
+- ``automation@rackspace-mgcp.iam.gserviceaccount.com``
+
+  + Project Browser
+  + Project Billing Manager
+  + Project IAM Admin
 
 Additionally, we grant these service accounts access with the following roles to enable support tooling for all Aviator and Service Blocks projects:
 
