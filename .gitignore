@@ -49,3 +49,5 @@ doc/_build/
 doc/build/
 api-docs/_build/
 api-docs/build/
+# Local Netlify folder
+.netlify
